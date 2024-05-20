@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Surfing Community</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        header .background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        header .hero {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .content-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff8c00;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <video class="background-video" autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero">
+            <h1>Welcome to the Surfing Community</h1>
+            <p>Connecting Surfers Worldwide</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#stories">Stories</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="content-section">
+        <h2>About Us</h2>
+        <p>Surfing is more than a sport; it's a way of life. Our community is built on a shared love for the ocean and the thrill of riding waves. Whether you're a seasoned pro or a beginner, you're welcome here.</p>
+        <img src="Aboutus.webp" alt="About Us">
+    </section>
+
+    <section id="events" class="content-section">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>
+                <h3>Surf Camp</h3>
+                <p>Date: July 15-20, 2024</p>
+                <p>Location: Huntington Beach, CA</p>
+            </li>
+            <li>
+                <h3>Community Beach Cleanup</h3>
+                <p>Date: August 5, 2024</p>
+                <p>Location: Malibu Beach, CA</p>
+            </li>
+            <li>
+                <h3>Annual Surf Competition</h3>
+                <p>Date: September 10, 2024</p>
+                <p>Location: Waikiki Beach, HI</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="stories" class="content-section">
+        <h2>Community Stories</h2>
+        <div class="story">
+            <h3>John's Journey</h3>
+            <p>From a beginner to a competitive surfer, read about John's inspiring journey and how the surfing community supported him every step of the way.</p>
+        </div>
+        <div class="story">
+            <h3>Emily's Ocean Conservation Efforts</h3>
+            <p>Emily, a passionate surfer, shares her initiatives to protect marine life and keep our oceans clean.</p>
+        </div>
+        <div class="story">
+            <h3>Group Surfing Expeditions</h3>
+            <p>Discover how our community organizes group trips to explore new surf spots and strengthen our bonds.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="content-section">
+        <h2>Gallery</h2>
+        <div class="button-container">
+            <button onclick="location.href='gallery.html'">Visit Gallery</button>
+        </div>
+    </section>
+</body>
+</html>
